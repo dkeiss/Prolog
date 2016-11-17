@@ -1,5 +1,5 @@
 ﻿/******************************/
-/*********** facts ***********/
+/*********** facts ************/
 /******************************/
 
 member(hans,maulwurf,m,1968,curly).
@@ -23,6 +23,18 @@ stamp_date_time(Stamp, DateTime, local),
 date_time_value(year, DateTime, Current_Year),
 Erg is Current_Year-Year_of_birth,
 write(Erg).
+
+allMembersWithAge :-
+member(Firstname,Lastname,Gender,Year_of_birth,Sport),
+write(Firstname),
+write(" "),
+write(Lastname),
+write(" "),
+write(Sport),
+write(" age: "),
+age(Firstname,Lastname),
+nl,
+fail.
 
 matchesIncludingReturn(Sport,Firstname1,Lastname1,Firstname2,Lastname2) :-
 member(Firstname1,Lastname1,_,_,Sport),

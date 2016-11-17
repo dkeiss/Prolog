@@ -1,0 +1,9 @@
+==============================
+===== Recursion examples =====
+==============================
+
+Exponent 1^0 = 1:
+exponent(1, 0, Result).
+
+Exponent 2^8 = 256:
+exponent(2, 8, Result).

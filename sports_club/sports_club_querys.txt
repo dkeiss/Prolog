@@ -1,0 +1,20 @@
+=============================
+=== Backtracking examples ===
+=============================
+
+All members with the same sport "curly":
+?- member(Firstname, Lastname, Gender, Year_of_birth, curly).
+-> continue with ;
+
+Age of all members:
+?- age(Firstname,Lastname).
+-> continue with ;
+
+All members with age without params:
+?- allMembersWithAge
+
+All matching games including return:
+?- matchesIncludingReturn(Sport, Firstname1,Lastname1,Firstname2,Lastname2).
+
+All "table_tennis" matching games including return:
+?- matchesIncludingReturn(table_tennis, Firstname1,Lastname1,Firstname2,Lastname2).
