@@ -1,0 +1,17 @@
+==============================
+===== List examples =====
+==============================
+
+Concat lists:
+X=[b,c],L=[a|X].
+X=[c,d],L=[a,b|X].
+
+Head and rest:
+[[a,b],[c,d],[e,f]]=[H|Re].
+[[a,b],[c,d],[e,f]]=[H1,H2|Re].
+[A|[B,C,D]] = [1,2,3,4].
+
+Stackoperations:
+Push: S=name('hans'),NS=[name('Klaus')|S].
+Pop: S=[a,b,c,d], S=[_|NS].
+Top of the Stack: S=[a,b,c,d], S=[ToS|_].
