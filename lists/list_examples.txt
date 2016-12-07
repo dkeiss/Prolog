@@ -6,6 +6,12 @@ Concat lists:
 X=[b,c],L=[a|X].
 X=[c,d],L=[a,b|X].
 
+Append:
+append([1,2,3],[a,b],Liste).
+append([1,2,3],Liste,[1,2,3,a,b]).
+append(Liste,[1,a],[1,2,3,a]).
+append(First,Last,[1,2,3,a,b]).
+
 Head and rest:
 [[a,b],[c,d],[e,f]]=[H|Re].
 [[a,b],[c,d],[e,f]]=[H1,H2|Re].
@@ -15,3 +21,15 @@ Stackoperations:
 Push: S=name('hans'),NS=[name('Klaus')|S].
 Pop: S=[a,b,c,d], S=[_|NS].
 Top of the Stack: S=[a,b,c,d], S=[ToS|_].
+
+Member:
+member(2,[1,2,3]).
+member(X,[1,2,3]).
+member(X,Liste).
+
+Unified:
+[a,b] = [a,X].
+[a,b] = [a,c]. -> false
+[a,b] = [a|X].
+
+
